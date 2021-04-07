@@ -42,6 +42,10 @@ operatie executata), dupa care pozitioneaza cursorul asa cum specifica parametri
 so_ftell intoarce pozitia curenta a cursorului, iar so_ferror si so_feof spune daca a aparut
 o eroare / daca s-a ajuns la sfarsitul fisierului. 
 
+#### MENTIUNE
+
+Nu am implementat rularea de procese (functiile so_popen si so_pclose).
+
 #### BIBLIOGRAFIE
  - https://ocw.cs.pub.ro/courses/so/curs/fs-ops
  - https://ocw.cs.pub.ro/courses/so/laboratoare/laborator-02
