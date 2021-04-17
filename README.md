@@ -25,8 +25,21 @@ Tema are urmatoarea organizare:
 - ```_test``` - care contine un script de rulare individuala a testelor, fisierele sursa *.c care folosesc biblioteca dinamica, directorul work unde se stocheaza outputurile, etc.
 
 #### IMPLEMENTARE
-Am inceput prin a creea structura ```so_file```, care contine un buffer si diverse 
-campuri care ajuta la implementare (fd - file descriptor, offset - pozitia in buffer etc.).
+Am inceput prin a creea structura ```so_file```, care contine urmatoarele campuri:
+```c
+struct _so_file {
+	char *buffer;
+	int fd;           // file descriptor
+	int offset;       // position in buffer
+	int cursor;       // position in file
+	int bytes_read;   // number of bytes returned from read
+	int last_op;      // last operation: 1 - write, 2 - read
+	int eof;          // mark reaching EOF
+	int err;          // mark an error
+};
+```
+
+
 Functiile ```so_fopen``` si ```so_fclose``` se ocupa de deschiderea/inchiderea fisierului si alocarea/
 dezalocarea de memorie. Functia ```so_fflush``` e folosita pentru a goli bufferul in fisier 
 atunci cand bufferul se umple sau cand este ultima scriere asociata operatiei de fwrite.
