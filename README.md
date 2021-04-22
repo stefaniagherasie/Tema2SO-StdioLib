@@ -1,5 +1,6 @@
 # Tema2SO-StdioLib
-[Tema2 - Sisteme de Operare] Tema presupune implementarea unei versiuni minimale a bibliotecii sdio, care sa permita lucrul cu fisiere. <br>
+[Tema2 - Sisteme de Operare] Tema presupune implementarea unei versiuni minimale a bibliotecii sdio, care sa permita lucrul cu fisiere.
+
 > Enuntul se gaseste [aici](https://ocw.cs.pub.ro/courses/so/teme/tema-2). <br>
 > Scheletul de cod se gaseste [aici](https://github.com/systems-cs-pub-ro/so/tree/master/assignments/2-stdio).
 
