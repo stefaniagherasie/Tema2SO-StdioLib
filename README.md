@@ -1,9 +1,9 @@
 # Tema2SO-StdioLib
 [Tema2 - Sisteme de Operare] Tema presupune implementarea unei versiuni minimale a bibliotecii sdio, care sa permita lucrul cu fisiere. <br>
-Enuntul se gaseste [aici](https://ocw.cs.pub.ro/courses/so/teme/tema-2). <br>
-Scheletul de cod se gaseste [aici](https://github.com/systems-cs-pub-ro/so/tree/master/assignments/2-stdio).
+> Enuntul se gaseste [aici](https://ocw.cs.pub.ro/courses/so/teme/tema-2). <br>
+> Scheletul de cod se gaseste [aici](https://github.com/systems-cs-pub-ro/so/tree/master/assignments/2-stdio).
 
-#### COMPILARE SI RULARE
+## Compilare si Rulare
 
 ► se foloseste Makefile pentru compilarea bibliotecii dinamice libso_stdio.so (make) <br>
 ► se foloseste Makefile.checker pentru testare (directorul trebuie sa contina libso_stdio.so)
@@ -17,7 +17,7 @@ Scheletul de cod se gaseste [aici](https://github.com/systems-cs-pub-ro/so/tree/
 
 
 
-#### ORGANIZARE
+## Organizare
 Tema are urmatoarea organizare:
 - ```so_stdio.h / so_stdio.c``` - implementarea functiilor din biblioteca
 - ```Makefile``` - compilarea bibliotecii dinamice libso_stdio.so
@@ -25,7 +25,7 @@ Tema are urmatoarea organizare:
 - ```run_all.sh``` - script care ruleaza testele
 - ```_test``` - care contine un script de rulare individuala a testelor, fisierele sursa *.c care folosesc biblioteca dinamica, directorul work unde se stocheaza outputurile, etc.
 
-#### IMPLEMENTARE
+## Implementare
 Am inceput prin a creea structura ```so_file```, care contine urmatoarele campuri:
 ```c
 struct _so_file {
@@ -52,12 +52,13 @@ operatie executata), dupa care pozitioneaza cursorul asa cum specifica parametri
 ```so_ftell``` intoarce pozitia curenta a cursorului, iar ```so_ferror/so_feof``` spune daca a aparut
 o eroare / daca s-a ajuns la sfarsitul fisierului. 
 
-#### MENTIUNE
-
-Nu am implementat rularea de procese (functiile so_popen si so_pclose).
-
-#### BIBLIOGRAFIE
+## Bibliografie
  - https://ocw.cs.pub.ro/courses/so/curs/fs-ops
  - https://ocw.cs.pub.ro/courses/so/laboratoare/laborator-02
  - https://www.tutorialspoint.com/c_standard_library/stdio_h.htm
+ 
+## Mentiune
+Nu am implementat rularea de procese (functiile so_popen si so_pclose).
+
+
  
