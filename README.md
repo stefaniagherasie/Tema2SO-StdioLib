@@ -60,6 +60,3 @@ o eroare / daca s-a ajuns la sfarsitul fisierului.
  
 ## Mentiune
 Nu am implementat rularea de procese (functiile so_popen si so_pclose).
-
-
- 
