@@ -1,5 +1,6 @@
 # Tema2SO-StdioLib
-[Tema2 - Sisteme de Operare] Tema presupune implementarea unei versiuni minimale a bibliotecii sdio, care sa permita lucrul cu fisiere.
+[Tema2 - Sisteme de Operare]  <br>
+Tema presupune implementarea unei versiuni minimale a bibliotecii sdio, care sa permita lucrul cu fisiere.
 
 > Enuntul se gaseste [aici](https://ocw.cs.pub.ro/courses/so/teme/tema-2). <br>
 > Scheletul de cod se gaseste [aici](https://github.com/systems-cs-pub-ro/so/tree/master/assignments/2-stdio).
@@ -8,15 +9,16 @@
 
 ► se foloseste Makefile pentru compilarea bibliotecii dinamice libso_stdio.so (make) <br>
 ► se foloseste Makefile.checker pentru testare (directorul trebuie sa contina libso_stdio.so)
-  
-    make & make -f Makefile.checker
-    DO_CLEANUP=no make -f Makefile.checker 
-    
-    RULARE UNUI TEST:     _test/run_test.sh init
-                          _test/run_test.sh <test>
-                          _test/run_test.sh clean
-
-
+```shell
+	make & make -f Makefile.checker
+	DO_CLEANUP=no make -f Makefile.checker 
+```
+Pentru rularea individuala a unui test:
+```shell
+	_test/run_test.sh init
+	_test/run_test.sh <test>
+	_test/run_test.sh clean
+```
 
 ## Organizare
 Tema are urmatoarea organizare:
